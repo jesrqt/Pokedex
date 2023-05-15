@@ -42,28 +42,31 @@ const Evolution = ({ pickedPokemon }) => {
         const firstPokeId = evoChainData.chain.species.url.replace('https://pokeapi.co/api/v2/pokemon-species/', '').replace('/', '');
         setImgUrl([`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${firstPokeId}.png`]);
 
+        try {
+          //Get name of second pokemon (if any)
+          if (evoChainData.chain.evolves_to[0].species.name) {
+            const secondPoke = evoChainData.chain.evolves_to[0].species.name;
+            setEvoData(prev => [
+              ...prev, secondPoke]);
 
-        //Get name of second pokemon (if any)
-        if (evoChainData.chain.evolves_to[0].species.name) {
-          const secondPoke = evoChainData.chain.evolves_to[0].species.name;
-          setEvoData(prev => [
-            ...prev, secondPoke]);
+            //Get image of the second pokemon (if any)
+            const secondPokeId = evoChainData.chain.evolves_to[0].species.url.replace('https://pokeapi.co/api/v2/pokemon-species/', '').replace('/', '');
+            setImgUrl(prev => [...prev, `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${secondPokeId}.png`]);
+          }
 
-          //Get image of the second pokemon (if any)
-          const secondPokeId = evoChainData.chain.evolves_to[0].species.url.replace('https://pokeapi.co/api/v2/pokemon-species/', '').replace('/', '');
-          setImgUrl(prev => [...prev, `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${secondPokeId}.png`]);
-        } 
+          //Get name of the third pokemon (if any)
+          if (evoChainData.chain.evolves_to[0].evolves_to[0].species.name) {
+            const thirdPoke = evoChainData.chain.evolves_to[0].evolves_to[0].species.name;
+            setEvoData(prev => [
+              ...prev, thirdPoke]);
 
-        //Get name of the third pokemon (if any)
-        if (evoChainData.chain.evolves_to[0].evolves_to[0].species.name) {
-          const thirdPoke = evoChainData.chain.evolves_to[0].evolves_to[0].species.name;
-          setEvoData(prev => [
-            ...prev, thirdPoke]);
-
-          //Get image of the third pokemon (if any)
-          const thirdPokeId = evoChainData.chain.evolves_to[0].evolves_to[0].species.url.replace('https://pokeapi.co/api/v2/pokemon-species/', '').replace('/', '');
-          setImgUrl(prev => [...prev, `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${thirdPokeId}.png`]);
-        } 
+            //Get image of the third pokemon (if any)
+            const thirdPokeId = evoChainData.chain.evolves_to[0].evolves_to[0].species.url.replace('https://pokeapi.co/api/v2/pokemon-species/', '').replace('/', '');
+            setImgUrl(prev => [...prev, `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${thirdPokeId}.png`]);
+          }
+        } catch (error) {
+          console.log(error)
+        }
 
       } catch (error) {
         setEvoError(error);
