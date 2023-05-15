@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling for the Pokemon logo at the top */
+.pokemon-logo {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  }
+  
+  .pokemon-logo img {
+    width: 600px;
+    height: auto;
+  }
+
+  /* Aligning Pokemon cards on the left and PokeDex info on the right */
+
+.left-right-container { 
+  width: 90%;
+  margin: auto;
+  padding-top: 100px;
+  display: flex;
+}
+
+/* Styling the left side with pokemon cards */
+.left-content {
+  flex-basis: 60%;
+}
+
+/* Styling the right side with specific pokemon info */
+.right-content {
+  flex-basis: 40%;
+  min-width: 300px;
+  margin-left: 2rem;
+}
+
+/* Grid layout for pokemon cards */
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 0.5fr));
+  grid-gap: 2rem;
+}
+
+.card {
+  width: 300px;
+  border-radius: 1rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+/* Styling the right side with specific pokemon info */
+/* First laying out each component on grid of 2 x 4 */
+.pokeinfo {
+  top: 100px;
+  right: 10px;
+}
+
+/* Overview styling */
+.overview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overview-container img {
+  margin: 2rem;
+  height: 250px;
+}
+
+.overview-container h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Types styling */
+.types-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.types-container p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.type {
+  gap: 1rem;
+  width: 40%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.type-name {
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+/* Evolution styling */
+.evolution-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.evol-poke-container {
+  margin-top: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.evolution-container img {
+  height: 80px;
+}
+
+/* GameIndices styling */
+.game-indices-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.game-indices-group {
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  width: 80%;
+}
+
+.game-indices-container p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.game-indices-header {
+  margin-top: 2rem;
+}
+
+/* BaseStats styling */
+
+.base-stats-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.base-stat-header {
+  margin-top: 2.5rem;
+}
+
+.base-stat {
+  margin-top: 1rem;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 300px;
+}
+
+.base-stat-group {
+  margin-left: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.base-stat-group label {
+  width: 120px;
+  text-align: end;
+}
+
+.base-stat-group p {
+  width: 30px;
+}
+
+
+.base-stat-meter {
+  width: 150px;
+  height: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+
+/* Previous and Next buttons at the bottom */
+.btn-group {
+  display: flex;
+}
+
+.btn-group button {
+  outline: none;
+  border: none;
+  width: 150px;
+  padding: 0.3rem 0;
+  margin: 2rem 1rem;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  background-color: #b74555;
+  border-radius: 8px;
+}
+
