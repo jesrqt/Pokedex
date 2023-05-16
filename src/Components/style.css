@@ -281,8 +281,8 @@ body {
 
 @media only screen and (max-width: 400px) {
   .base-stat-group label {
-    font-size: .8rem;
-    width: 80px;
+    font-size: .7rem;
+    width: 70px;
   }
   
   .base-stat-group p {
