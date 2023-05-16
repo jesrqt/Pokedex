@@ -16,16 +16,22 @@ body {
 }
 
 /* Styling for the Pokemon logo at the top */
+.pokemon-logo-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .pokemon-logo {
-  width: 90%;
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+
   }
   
   .pokemon-logo img {
-    width: 600px;
-    height: auto;
+    width: 90%;
+    max-width: 1000px;
   }
 
   /* Aligning Pokemon cards on the left and PokeDex info on the right */
@@ -35,25 +41,46 @@ body {
   margin: auto;
   padding-top: 100px;
   display: flex;
+  align-items: flex-start;
+}
+
+@media only screen and (max-width: 715px) {
+  .left-right-container {
+    flex-direction: column-reverse;
+    padding-top: 60px;
+  }
 }
 
 /* Styling the left side with pokemon cards */
 .left-content {
   flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Styling the right side with specific pokemon info */
 .right-content {
   flex-basis: 40%;
-  min-width: 300px;
   margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+@media only screen and (max-width: 715px) {
+  .right-content {
+    margin-left: 0;
+  }
+}
+
 
 /* Grid layout for pokemon cards */
 .pokemon-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 0.5fr));
-  grid-gap: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .card {
@@ -65,6 +92,12 @@ body {
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
+}
+
+@media only screen and (max-width: 400px) {
+  .card h2 {
+    font-size: 1rem;
+  }
 }
 
 /* Styling the right side with specific pokemon info */
@@ -84,6 +117,21 @@ body {
 .overview-container img {
   margin: 2rem;
   height: 250px;
+}
+
+@media only screen and (max-width: 400px) {
+  .overview-container img {
+    width: 70%;
+    height: auto;
+  }
+  .evolution-container h3 {
+    font-size: .8rem;
+    text-align: center;
+  }
+
+  .evol-poke-container {
+    gap: 1rem;
+  }
 }
 
 .overview-container h1 {
@@ -136,8 +184,20 @@ body {
   gap: 1.5rem;
 }
 
+@media only screen and (max-width: 400px) {
+  .evol-poke-container {
+    gap: .5rem;
+  }
+}
+
 .evolution-container img {
   height: 80px;
+}
+
+@media only screen and (max-width: 400px) {
+  .evolution-container img {
+    height: 60px;
+  }
 }
 
 /* GameIndices styling */
@@ -149,7 +209,8 @@ body {
 }
 
 .game-indices-group {
-  gap: 1rem;
+  row-gap: .5rem;
+  column-gap: .2rem;
   display: flex;
   flex-wrap: wrap;
   margin-top: 1rem;
@@ -162,6 +223,12 @@ body {
   color: white;
   padding: 0.5rem;
   border-radius: 8px;
+}
+
+@media only screen and (max-width: 400px) {
+  .game-indices-container p {
+    font-size: .8rem;
+  }
 }
 
 .game-indices-header {
@@ -205,7 +272,6 @@ body {
   width: 30px;
 }
 
-
 .base-stat-meter {
   width: 150px;
   height: 25px;
@@ -213,11 +279,26 @@ body {
   margin-right: 5px;
 }
 
-
+@media only screen and (max-width: 400px) {
+  .base-stat-group label {
+    font-size: .8rem;
+    width: 80px;
+  }
+  
+  .base-stat-group p {
+    font-size: .8rem;
+  }
+  
+  .base-stat-meter {
+    width: 100px;
+    height: 15px;
+  }
+}
 
 /* Previous and Next buttons at the bottom */
 .btn-group {
   display: flex;
+  justify-content: center;
 }
 
 .btn-group button {
@@ -225,7 +306,7 @@ body {
   border: none;
   width: 150px;
   padding: 0.3rem 0;
-  margin: 2rem 1rem;
+  margin: 2rem 0.5rem;
   font-size: 17px;
   font-weight: bold;
   color: white;

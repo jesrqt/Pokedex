@@ -2,8 +2,10 @@ import React from 'react';
 
 const PokemonLogo = () => {
   return (
+    <div className='pokemon-logo-container'>
     <div className='pokemon-logo'>
-      <img src="/images/pokemon.webp" alt="pokemon logo" />
+      <img src="/images/Pokémon_logo.webp" alt="pokemon logo" />
+    </div>
     </div>
   );
 }
