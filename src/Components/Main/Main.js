@@ -84,7 +84,7 @@ const Main = () => {
       <PokemonLogo />
       <div className='left-right-container'>
         <div className="left-content">
-          <Card pokemon={pokeData} loading={loading} error={error} updatePokeDexState={updatePokeDexState} />
+          <Card data-testid="card-component" pokemon={pokeData} loading={loading} error={error} updatePokeDexState={updatePokeDexState} />
           <div className="btn-group">
             {
               (prevUrl !== null) &&
