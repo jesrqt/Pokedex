@@ -13,6 +13,7 @@ const Card = ({ pokemon, loading, error, updatePokeDexState }) => {
         {pokemon.map((item) => {
           return (
             <div
+              data-testid='card-div'
               className='card'
               key={item.id} onClick={() => updatePokeDexState(item)}
               style={{ background: getTypeColor(item.types[0].type.name) }}>
@@ -20,7 +21,7 @@ const Card = ({ pokemon, loading, error, updatePokeDexState }) => {
               <img src={item.sprites.front_default} alt={item.name} />
               <h2>{item.name}</h2>
             </div>
-            )
+          )
         })}
       </div>
     );
