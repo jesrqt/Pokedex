@@ -1,5 +1,8 @@
 # About Pokédex
-Pokédex, as the name suggests, is an pokédex app. It is built with HTML, CSS, and JavaScript with the React framework. Upon landing the page, users can see the first 20 pokémons. Users can also click on the pokémons to see their information, such as their names, types, evolutions, game indices (versions of pokémon game in which they appear), and base stats. Users can also load more pokémons by clicking on the next page. In total, they can browse 380 pokémons, from the first to the third generations.
+Pokédex, as the name suggests, is an pokédex app. It is built with HTML, CSS, and JavaScript with the React framework. Upon landing the page, users can see the first 20 pokémons. Users can also click on the pokémons to see their information, such as their names, types, evolutions, game indices (versions of pokémon in which they appear), and base stats. Users can also load more pokémons by clicking on the next page. In total, they can browse 380 pokémons, from the first to the third generations.
+
+If you want to use the app in action, here is a deployed app with Netlify: https://genuine-treacle-21c99c.netlify.app/
+You can also visit my Portfolio website: https://jessieinit.com/
 
 ![Pokédex, an app where you can browse Pokémons](/public/images/Pokedex_Image.png)
 
@@ -15,14 +18,26 @@ I am currently learning HTML, CSS, JavaScript, and React to become a front-end d
 * Gracefully handle potential errors from API with try and catch syntax
 * Effectively update states with json objects returned from the API calls
 
+## How does Pokédex work?
 
-## How to Use Pokédex
+1. Open the website (https://genuine-treacle-21c99c.netlify.app/) or run the website on your local machine (http://localhost:3000).
+2. Notice that the first 20 pokémons are automatically fetched from PokeAPI (https://pokeapi.co/) and rendered at the left side of the website.
+3. Click on one of the pokémons to see its information, such as their names, types, evolutions, game indices (versions of pokémon in which they appear), and base stats.
+4. Click on "Next" button to go to the next page with another 20 pokémons.
+5. Click on "Previous button to go back to the previous page with previous 20 pokémons.
+
+## Technologies used for Pokédex
+
+
+
+## How to install and run Pokédex
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Download the repository and run:
 
-## Available Scripts
+### `npm install`
 
-In the project directory, you can run:
+and 
 
 ### `npm start`
 
@@ -32,34 +47,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
 
