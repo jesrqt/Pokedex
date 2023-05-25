@@ -38,6 +38,22 @@ The technologies used for the app are the following:
 
 ![Example code using React hooks and fetch API](/public/images/Example_Code.png)
 
+## Special thanks to Kirti-salunkhe
+
+This Pokedex was inspired by the work of Kirti-salunkhe, who generously shared her work on Youtube and Github
+
+* Her Youtube: https://youtu.be/Iz5iNOMCIjY
+* Her Github: https://github.com/Kirti-salunkhe/PokemonApp
+
+I have taken her code and refactored/improved in many ways. <br>
+Below are the major points of changes and improvements that I worked by myself:
+
+* Refactored her axios API calls into fetch API calls.
+* There was no error handling in case API calls do not work. Thus I added try and catch statements for all API calls.
+* There was no information available on types, evolutions, and game indices for each pokémon. I made them available by adding more API calls.
+* Base stats were shown in text in her app. I changed them to be represented with bar charts.
+* The background color of her pokémon cards were all blue. I changed it to be more dynamic, with the color determined by the types of each Pokémon (e.g. grass type pokémons are represented with green, while fire pokémons are represented by orange).
+
 ## How to install and run Pokédex
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
