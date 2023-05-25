@@ -9,22 +9,22 @@ You can also visit my Portfolio website: https://jessieinit.com/
 ## Motivation of the project
 I am currently learning HTML, CSS, JavaScript, and React to become a front-end developer. Through this project, I attempted to learn the following:
 
-* Gain hands-on experiences developing a React app from planning, designing, to developing
+* Gain hands-on experience developing a React app from planning, designing, to developing
 * Familiarize myself with React JSX syntax
 * Learn how to set up states using hooks, especially useState() and useEffect()
-* Learn how to pass states using props and use them throughout components
+* Learn how to pass states using props and use them through other components
 * Learn how to lift props up through components
-* Gain experiences on fetch API with async and await syntax
+* Gain experience on fetch API with async and await syntax
 * Gracefully handle potential errors from API with try and catch syntax
 * Effectively update states with json objects returned from the API calls
 
 ## How does Pokédex work?
 
-1. Open the website (https://genuine-treacle-21c99c.netlify.app/) or run the website on your local machine (http://localhost:3000).
+1. Open the website (https://genuine-treacle-21c99c.netlify.app/) or run the website on your local machine (http://localhost:<PORT_NUMBER>).
 2. Notice that the first 20 pokémons are automatically fetched from PokeAPI (https://pokeapi.co/) and rendered at the left side of the website.
 3. Click on one of the pokémons to see its information, such as its name, type, evolutions, game indices (versions of pokémon in which it appears), and base stats.
-4. Click on "Next" button to go to the next page with another 20 pokémons.
-5. Click on "Previous" button to go back to the previous page with previous 20 pokémons.
+4. Click on the "Next" button to go to the next page with another 20 pokémons.
+5. Click on the "Previous" button to go back to the previous page with previous 20 pokémons.
 
 ## Technologies used for Pokédex
 
@@ -45,7 +45,7 @@ This Pokedex was inspired by the work of Kirti-salunkhe, who generously shared h
 * Her Youtube: https://youtu.be/Iz5iNOMCIjY
 * Her Github: https://github.com/Kirti-salunkhe/PokemonApp
 
-I have taken her code and refactored/improved in many ways. <br>
+I have taken her code and refactored/improved in many ways. \
 Below are the major points of changes and improvements that I worked by myself:
 
 * Refactored her axios API calls into fetch API calls.
