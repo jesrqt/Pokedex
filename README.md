@@ -1,8 +1,18 @@
-# Pokédex Overview
+# About Pokédex
 Pokédex, as the name suggests, is an pokédex app. It is built with HTML, CSS, and JavaScript with the React framework. Upon landing the page, users can see the first 20 pokémons. Users can also click on the pokémons to see their information, such as their names, types, evolutions, game indices (versions of pokémon game in which they appear), and base stats. Users can also load more pokémons by clicking on the next page. In total, they can browse 380 pokémons, from the first to the third generations.
 
 ## Motivation of the project
-I have built this project in order to learn the following technologies:
+I am currently learning HTML, CSS, JavaScript, and React to become a front-end developer. Through this project, I attempted to learn the following:
+
+* Gain hands-on experiences developing a React app from planning, designing, to developing
+* Familiarize myself with React JSX syntax
+* Learn how to set up states using hooks, especially useState() and useEffect()
+* Learn how to pass states using props and use them throughout components
+* Learn how to lift props up through components
+* Gain experiences on fetch API with async and await syntax
+* Gracefully handle potential errors from API with try and catch syntax
+* Effectively update states with json objects returned from the API calls
+
 
 ## How to Use Pokédex
 
