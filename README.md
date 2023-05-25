@@ -22,13 +22,21 @@ I am currently learning HTML, CSS, JavaScript, and React to become a front-end d
 
 1. Open the website (https://genuine-treacle-21c99c.netlify.app/) or run the website on your local machine (http://localhost:3000).
 2. Notice that the first 20 pokémons are automatically fetched from PokeAPI (https://pokeapi.co/) and rendered at the left side of the website.
-3. Click on one of the pokémons to see its information, such as their names, types, evolutions, game indices (versions of pokémon in which they appear), and base stats.
+3. Click on one of the pokémons to see its information, such as its name, type, evolutions, game indices (versions of pokémon in which it appears), and base stats.
 4. Click on "Next" button to go to the next page with another 20 pokémons.
-5. Click on "Previous button to go back to the previous page with previous 20 pokémons.
+5. Click on "Previous" button to go back to the previous page with previous 20 pokémons.
 
 ## Technologies used for Pokédex
 
+The technologies used for the app are the following:
 
+* React built with function components
+* React hooks including useState(), useEffect(), and useCallback()
+* Fetch API to send GET requests to PokeAPI (https://pokeapi.co/)
+* Better readability with async and await syntax
+* Error handling with try and catch statements
+
+![Example code using React hooks and fetch API](/public/images/Example_Code.png)
 
 ## How to install and run Pokédex
 
